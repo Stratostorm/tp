@@ -1,0 +1,27 @@
+@startuml
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor LOGIC_COLOR_T4
+skinparam classBackgroundColor LOGIC_COLOR
+
+package Logic {
+
+package Parser {
+Class TagCommandParser
+}
+
+package Command {
+Class "{abstract}\nCommand" as Command
+Class TagCommand
+}
+}
+
+package Model {
+Class Tag MODEL_COLOR
+Class ChildTag MODEL_COLOR
+}
+TagCommand -up-|>Command
+TagCommandParser .right.> Tag
+ChildTag -up-|>Tag MODEL_COLOR
+
+@enduml

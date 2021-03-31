@@ -26,6 +26,7 @@ Class UniquePersonList
 
 Package Tag {
 Class Tag
+Class ChildTag
 }
 }
 
@@ -47,6 +48,7 @@ Person *--> Phone
 Person *--> Email
 Person *--> Address
 Person *--> "*" Tag
+Tag <|-- ChildTag
 
 Name -[hidden]right-> Phone
 Phone -[hidden]right-> Address
