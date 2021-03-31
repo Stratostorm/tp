@@ -141,7 +141,7 @@ The `tag` command allows for the appending of tags to an existing
 `Person` without having to replace existing tags as offered by `edit` and is facilitated by 
 the `TagCommand` and `TagCommandParser` classes.
 
-[Placeholder: Class Diagram of Tag and related classes here... ]
+![TagCommandClassDiagram](images/TagCommandClassDiagram.png)
 
 As part of the `Model` component, other components interact with tags through the `Model.java` API.
 As `Person` objects are designed to be immutable, commands that involve manipulating Persons such as `edit` and `tag`
